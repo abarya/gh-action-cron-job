@@ -51,4 +51,4 @@ jobs:
       # Step 4: Fetch and store show times
       - name: Fetch and store show times
         run: |
-          python fetch_store.py
+          python undetected.py
