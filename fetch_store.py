@@ -27,7 +27,7 @@ cookies = driver.get_cookies()
 cookies_dict = {cookie['name']: cookie['value'] for cookie in cookies}
 print(cookies_dict)
 
-driver.get("https://www.example.come")
+driver.get("https://www.example.com")
 
 resp = requests.get(apiUrl, cookies=cookies_dict)
 if resp.status_code != 200:
