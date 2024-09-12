@@ -44,9 +44,9 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       # Install ChromeDriver
-      - name: Set up ChromeDriver
-        run: |
-          sudo apt-get install -y chromedriver      
+      # - name: Set up ChromeDriver
+      #   run: |
+      #     sudo apt-get install -y chromedriver      
           
       # Step 4: Fetch and store show times
       - name: Fetch and store show times
