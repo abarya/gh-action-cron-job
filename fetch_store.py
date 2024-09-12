@@ -21,6 +21,7 @@ driver.get(url)
 
 # Optionally, wait for the page to load completely or perform actions like login
 time.sleep(5)  # Adjust this based on loading time or add WebDriverWait for specific elements
+print(driver.page_source)
 
 # Retrieve all cookies from the browser
 cookies = driver.get_cookies()
@@ -28,6 +29,7 @@ cookies_dict = {cookie['name']: cookie['value'] for cookie in cookies}
 print(cookies_dict)
 
 driver.get("https://www.example.com")
+print("example.com", driver.page_source)
 
 resp = requests.get(apiUrl, cookies=cookies_dict)
 if resp.status_code != 200:
